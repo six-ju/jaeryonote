@@ -23,10 +23,12 @@ const usd = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
 const dartLink = (rcpNo) => `https://dart.fss.or.kr/api/link.jsp?rcpNo=${encodeURIComponent(rcpNo)}`;
 const TONE = { good: '호재성', warn: '주의', info: '참고' };
 
+// 데이터가 없는 화면은 메뉴와 사이트맵에서 뺀다(빈 페이지가 검색·광고 심사에 걸리지 않게)
+const hasInsiders = read('insiders.json', []).length > 0;
 const NAV = [
     ['/', '오늘의 재료'],
     ['/market/', '미국 시장'],
-    ['/us-insiders/', '미국 내부자 매수'],
+    ...(hasInsiders ? [['/us-insiders/', '미국 내부자 매수']] : []),
     ['/tools/', '계산기'],
     ['/guide/', '공시 공부'],
 ];
@@ -191,7 +193,7 @@ ${adSlot('bottom')}`,
         scripts: appJs,
     }));
 
-    pages.push(page('/us-insiders/', {
+    (hasInsiders ? pages : []).push(page('/us-insiders/', {
         title: '미국 내부자 매수',
         description: '미국 상장사 임원과 대주주가 자기 돈으로 회사 주식을 장내에서 산 기록(SEC Form 4, 거래 코드 P)을 모았어요.',
         body: `<div class="head"><h1>미국 내부자 매수</h1><p class="lede">임원·이사·10% 이상 주주가 시장에서 직접 산 기록만 모았어요(SEC Form 4, 코드 P, ${usd(50000)} 이상). 보상으로 받은 주식이나 옵션 행사는 뺐어요.</p><p class="meta">마지막 확인 ${stamp(status.sec?.at)} · 최근 30일 ${insiders.length}건 · 출처 SEC EDGAR</p></div>
