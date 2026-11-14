@@ -62,6 +62,9 @@ const layout = ({ path: p, title, description, body, scripts = '' }) => {
 ${config.naverVerification ? `<meta name="naver-site-verification" content="${esc(config.naverVerification)}">` : ''}
 <link rel="icon" href="${url('/assets/favicon.svg')}" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="${esc(config.name)} 공시 피드" href="${url('/rss.xml')}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600;800&display=swap">
 <link rel="stylesheet" href="${url('/assets/style.css')}">
 ${config.adsense ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${config.adsense}" crossorigin="anonymous"></script>` : ''}
 </head>
@@ -173,7 +176,7 @@ ${adSlot('bottom')}`,
         pages.push(page(`/c/${c.key}/`, {
             title: `${c.label} 공시 모음`,
             description: `최근 30일 동안 나온 ${c.label} 공시를 날짜순으로 모았어요.`,
-            body: `<div class="head"><p class="crumb"><a href="${url('/')}">오늘의 재료</a></p><h1>${c.label} 공시 모음</h1><p class="lede">최근 30일 동안 나온 ${c.label} 관련 공시 ${items.length}건이에요. <span class="tag t-${c.tone}">${TONE[c.tone]}</span></p>${g ? `<p class="meta"><a href="${url(`/guide/${g.slug}/`)}">${esc(g.title)} →</a></p>` : ''}</div>${feed(items)}${adSlot('bottom')}`,
+            body: `<div class="head"><p class="crumb"><a href="${url('/')}">오늘의 재료</a></p><h1>${c.label} 공시 모음</h1><p class="lede">최근 30일 동안 나온 ${c.label} 관련 공시 ${items.length}건이에요. <span class="tag t-${c.tone}">${TONE[c.tone]}</span></p>${g ? `<p class="meta">읽어 보기: <a href="${url(`/guide/${g.slug}/`)}">${esc(g.title)}</a></p>` : ''}</div>${feed(items)}${adSlot('bottom')}`,
         }));
     }
 
@@ -262,7 +265,7 @@ ${adSlot('bottom')}`,
     simple('/privacy/', '개인정보처리방침', '재료노트의 개인정보 처리 방침입니다.', `
 <p>재료노트는 회원가입이 없고, 이름·연락처 같은 개인정보를 직접 모으지 않아요.</p>
 <h2>쿠키와 광고</h2><p>이 사이트는 Google 애드센스 광고를 보여 줍니다. Google을 포함한 제3자 광고 사업자는 쿠키를 사용해 이 사이트와 다른 사이트 방문 기록을 바탕으로 광고를 보여 줄 수 있어요. 맞춤 광고는 <a href="https://adssettings.google.com/" rel="noopener" target="_blank">Google 광고 설정</a>에서 끌 수 있고, <a href="https://www.aboutads.info/" rel="noopener" target="_blank">aboutads.info</a>에서 다른 사업자의 쿠키 사용도 끌 수 있어요.</p>
-<h2>외부 화면</h2><p>시장 지표와 종목 화면은 TradingView 위젯이라, 해당 화면 안에서는 TradingView의 개인정보 정책이 적용돼요.</p>
+<h2>외부 화면과 글꼴</h2><p>시장 지표와 종목 화면은 TradingView 위젯이라, 해당 화면 안에서는 TradingView의 개인정보 정책이 적용돼요. 제목 글꼴은 Google Fonts에서 받아 와서, 글꼴을 받을 때 접속 정보가 Google에 전달될 수 있어요.</p>
 <h2>계산기</h2><p>계산기에 넣은 숫자는 브라우저 안에서만 계산하고 서버로 보내지 않아요.</p>
 <h2>문의</h2><p><a href="${url('/contact/')}">문의 페이지</a>로 연락해 주세요.</p><p class="meta">시행일 2026년 11월 14일</p>`);
     simple('/contact/', '문의', '재료노트에 오류 제보나 의견을 보내는 방법입니다.', `

@@ -157,3 +157,12 @@ h2 { letter-spacing: -0.02em; }
 .chip:active, .calc button:active, .reset:active { transform: translateY(1px); }
 .calc button:hover { opacity: .88; }
 .tv:not(:has(iframe)) { background: repeating-linear-gradient(var(--raise) 0 44px, var(--line) 44px 45px); border-radius: 8px; }
+/* 제목 글꼴: 공책에 적은 노트 느낌의 부리 글꼴. 본문은 시스템 글꼴로 빠르게 */
+h1, .brand, .prose h2, .list strong, .side-h, .day-h { font-family: "Hahmlet", "Noto Serif KR", "AppleMyungjo", serif; }
+h1 { font-weight: 800; letter-spacing: -0.035em; }
+.brand { font-weight: 600; }
+.brand b { font-weight: 800; color: var(--good); }
+::selection { background: var(--good-bg); color: var(--ink); }
+input, select { caret-color: var(--good); }
+::placeholder { color: var(--ink-2); opacity: 1; }
+html { scrollbar-color: var(--line) var(--bg); }
