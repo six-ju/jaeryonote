@@ -38,7 +38,8 @@ const run = async () => {
         status.errors.dart = e.message;
     }
 
-    try {
+    // SEC가 2026-11-14 PC·GitHub 모두에서 403(Undeclared Automated Tool)을 줘서 기본 꺼 둔다. 풀리면 SEC_ENABLED=1
+    if (process.env.SEC_ENABLED === '1') try {
         const insiders = read('insiders.json', []);
         const seenAcc = read('sec-seen.json', []);
         const rows = await fetchInsiderBuys(new Set(seenAcc));
