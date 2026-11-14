@@ -1,0 +1,11 @@
+{
+    "name": "jaeryonote",
+    "private": true,
+    "description": "오늘 나온 주식 재료(공시)를 종류별로 보여 주는 정적 사이트",
+    "engines": { "node": ">=20" },
+    "scripts": {
+        "collect": "node scripts/collect.js",
+        "build": "node scripts/build.js",
+        "test": "node --test test/"
+    }
+}
