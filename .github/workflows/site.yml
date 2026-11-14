@@ -17,9 +17,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: site
@@ -28,6 +26,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       # 수집 데이터는 data 브랜치에 쌓는다. 첫 실행에는 브랜치가 없어 실패해도 넘어간다
@@ -48,10 +48,12 @@ jobs:
       - name: 데이터 저장
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.rebuild_only)
         working-directory: data
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ ! -d .git ]; then
             git init -q -b data
-            git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+            git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}"
           fi
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
@@ -67,6 +69,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

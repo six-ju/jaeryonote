@@ -21,7 +21,8 @@ const tag = (xml, name) => {
 
 // 발행사(Issuer) 항목의 공시 폴더만 쓴다(같은 공시가 보고자 항목으로 한 번 더 나온다)
 const parseFeed = (atom) => [...atom.matchAll(/<entry>([\s\S]*?)<\/entry>/g)]
-    .map(([, e]) => ({ title: (e.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '', href: (e.match(/href="([^"]+)"/) || [])[1] || '' }))
+    // 링크는 SEC 공시 폴더 주소만 받는다(피드 내용이 다른 서버를 가리키지 못하게)
+    .map(([, e]) => ({ title: (e.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '', href: (e.match(/<link[^>]*href="(https:\/\/www\.sec\.gov\/Archives\/edgar\/data\/[^"]+)"/) || [])[1] || '' }))
     .filter((e) => /\(Issuer\)$/.test(e.title) && e.href)
     .map((e) => e.href.replace(/[^/]+$/, ''));
 

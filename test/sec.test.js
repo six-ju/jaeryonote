@@ -21,3 +21,8 @@ test('Form 4에서 장내 매수(P)만 합산한다', () => {
     assert.equal(parseForm4(form('S', 'D')), null);
     assert.equal(parseForm4(form('A')), null);
 });
+
+test('SEC 폴더가 아닌 링크는 버린다', () => {
+    const atom = '<feed><entry><title>4 - EVIL (1) (Issuer)</title><link href="https://evil.example/x/"/></entry></feed>';
+    assert.deepEqual(parseFeed(atom), []);
+});

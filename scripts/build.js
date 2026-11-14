@@ -12,7 +12,8 @@ const SITE = (argSite > 0 ? process.argv[argSite + 1] : config.site).replace(/\/
 const BASE = new URL(SITE).pathname.replace(/\/$/, '');
 const read = (f, d) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8')); } catch { return d; } };
 
-const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// XML(rss·sitemap)이 깨지지 않게 제어문자도 지운다
+const esc = (v) => String(v ?? '').replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const url = (p) => `${BASE}${p}`;
 const KST = { timeZone: 'Asia/Seoul' };
 const dayKey = (iso) => new Date(iso).toLocaleDateString('sv-SE', KST);
@@ -200,7 +201,7 @@ ${adSlot('bottom')}`,
         title: '미국 내부자 매수',
         description: '미국 상장사 임원과 대주주가 자기 돈으로 회사 주식을 장내에서 산 기록(SEC Form 4, 거래 코드 P)을 모았어요.',
         body: `<div class="head"><h1>미국 내부자 매수</h1><p class="lede">임원·이사·10% 이상 주주가 시장에서 직접 산 기록만 모았어요(SEC Form 4, 코드 P, ${usd(50000)} 이상). 보상으로 받은 주식이나 옵션 행사는 뺐어요.</p><p class="meta">마지막 확인 ${stamp(status.sec?.at)} · 최근 30일 ${insiders.length}건 · 출처 SEC EDGAR</p></div>
-${insiders.length ? `<div class="table-wrap"><table class="data"><caption class="sr-only">미국 내부자 장내 매수 목록</caption><thead><tr><th scope="col">거래일</th><th scope="col">종목</th><th scope="col">산 사람</th><th scope="col" class="num">매수 금액</th><th scope="col" class="num">주식 수</th></tr></thead><tbody>${insiders.slice(0, 300).map((r) => `<tr><td>${esc(r.date)}</td><td><a href="${esc(r.url)}" rel="nofollow noopener" target="_blank"><strong>${esc(r.ticker)}</strong></a> <span class="muted">${esc(r.company)}</span></td><td>${esc(r.owner)} <span class="muted">${esc(r.role)}</span></td><td class="num">${usd(r.value)}</td><td class="num">${r.shares.toLocaleString('en-US')}</td></tr>`).join('')}</tbody></table></div>` : '<p class="empty">아직 모인 기록이 없어요.</p>'}
+${insiders.length ? `<div class="table-wrap"><table class="data"><caption class="sr-only">미국 내부자 장내 매수 목록</caption><thead><tr><th scope="col">거래일</th><th scope="col">종목</th><th scope="col">산 사람</th><th scope="col" class="num">매수 금액</th><th scope="col" class="num">주식 수</th></tr></thead><tbody>${insiders.slice(0, 300).map((r) => `<tr><td>${esc(r.date)}</td><td>${String(r.url).startsWith('https://www.sec.gov/') ? `<a href="${esc(r.url)}" rel="nofollow noopener" target="_blank"><strong>${esc(r.ticker)}</strong></a>` : `<strong>${esc(r.ticker)}</strong>`} <span class="muted">${esc(r.company)}</span></td><td>${esc(r.owner)} <span class="muted">${esc(r.role)}</span></td><td class="num">${usd(r.value)}</td><td class="num">${r.shares.toLocaleString('en-US')}</td></tr>`).join('')}</tbody></table></div>` : '<p class="empty">아직 모인 기록이 없어요.</p>'}
 <p class="note"><a href="${url('/guide/form4/')}">Form 4 읽는 법</a> · 내부자 매수가 주가 상승을 약속하지는 않아요.</p>
 ${adSlot('bottom')}`,
     }));
