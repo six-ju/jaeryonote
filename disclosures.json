@@ -1,1 +1,38 @@
-[]
+[
+ {
+  "rcpNo": "20261116800712",
+  "market": "KOSPI",
+  "company": "미원상사",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-16T05:30:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261116800703",
+  "market": "KOSPI",
+  "company": "아진전자부품",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-16T05:28:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261116000520",
+  "market": "KOSDAQ",
+  "company": "와이즈넛",
+  "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "stockCode": null,
+  "at": "2026-11-16T05:27:00.000Z",
+  "category": "buyback",
+  "label": "자사주 취득",
+  "tone": "good",
+  "corrected": false
+ }
+]
