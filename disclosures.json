@@ -1,5 +1,17 @@
 [
  {
+  "rcpNo": "20261116800782",
+  "market": "KOSPI",
+  "company": "INVENI",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-16T05:45:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261116800712",
   "market": "KOSPI",
   "company": "미원상사",
