@@ -1,5 +1,77 @@
 [
  {
+  "rcpNo": "20261117800191",
+  "market": "KOSPI",
+  "company": "신흥",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-17T01:35:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261117800189",
+  "market": "KOSPI",
+  "company": "한성기업",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-17T01:33:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261117900179",
+  "market": "KOSDAQ",
+  "company": "셀바이오휴먼텍",
+  "report": "주식소각결정",
+  "stockCode": null,
+  "at": "2026-11-17T01:26:00.000Z",
+  "category": "retire",
+  "label": "자사주 소각",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261117000029",
+  "market": "KOSDAQ",
+  "company": "사람인",
+  "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "stockCode": null,
+  "at": "2026-11-17T01:26:00.000Z",
+  "category": "buyback",
+  "label": "자사주 취득",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261117800167",
+  "market": "KOSPI",
+  "company": "남광토건",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-17T01:12:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261117900159",
+  "market": "KOSDAQ",
+  "company": "피스피스스튜디오",
+  "report": "주식소각결정",
+  "stockCode": null,
+  "at": "2026-11-17T00:56:00.000Z",
+  "category": "retire",
+  "label": "자사주 소각",
+  "tone": "good",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261116800782",
   "market": "KOSPI",
   "company": "INVENI",
