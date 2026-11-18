@@ -1,5 +1,17 @@
 [
  {
+  "rcpNo": "20261118000025",
+  "market": "KOSDAQ",
+  "company": "SKAI",
+  "report": "[기재정정]주요사항보고서(유상증자결정)",
+  "stockCode": null,
+  "at": "2026-11-18T00:29:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261117900375",
   "market": "KOSDAQ",
   "company": "나우IB",
