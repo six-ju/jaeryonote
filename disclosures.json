@@ -1,5 +1,29 @@
 [
  {
+  "rcpNo": "20261119800042",
+  "market": "KOSPI",
+  "company": "WISCOM",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-19T00:06:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261118000367",
+  "market": "KOSDAQ",
+  "company": "판타지오",
+  "report": "[첨부정정]주요사항보고서(유상증자결정)",
+  "stockCode": null,
+  "at": "2026-11-18T22:30:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261118900290",
   "market": "KOSDAQ",
   "company": "네오위즈홀딩스",
