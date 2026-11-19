@@ -1,5 +1,77 @@
 [
  {
+  "rcpNo": "20261119800335",
+  "market": "KOSPI",
+  "company": "넥센타이어",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-19T06:21:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261119000183",
+  "market": "KOSDAQ",
+  "company": "파라택시스이더리움",
+  "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "stockCode": null,
+  "at": "2026-11-19T06:18:00.000Z",
+  "category": "buyback",
+  "label": "자사주 취득",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261119900312",
+  "market": "KOSDAQ",
+  "company": "유틸렉스",
+  "report": "최대주주변경",
+  "stockCode": null,
+  "at": "2026-11-19T06:16:00.000Z",
+  "category": "control",
+  "label": "최대주주 변경",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261119000157",
+  "market": "KOSDAQ",
+  "company": "드림씨아이에스",
+  "report": "주요사항보고서(자기주식취득결정)",
+  "stockCode": null,
+  "at": "2026-11-19T06:14:00.000Z",
+  "category": "buyback",
+  "label": "자사주 취득",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261119800297",
+  "market": "KOSPI",
+  "company": "HS화성",
+  "report": "[기재정정]단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-19T05:48:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
+  "rcpNo": "20261119800254",
+  "market": "KOSPI",
+  "company": "일성건설",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-19T05:12:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261119000091",
   "market": "KOSDAQ",
   "company": "크리스에프앤씨",
