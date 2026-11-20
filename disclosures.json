@@ -1,5 +1,53 @@
 [
  {
+  "rcpNo": "20261120900185",
+  "market": "KOSDAQ",
+  "company": "디케이앤디",
+  "report": "주식소각결정",
+  "stockCode": null,
+  "at": "2026-11-20T00:29:00.000Z",
+  "category": "retire",
+  "label": "자사주 소각",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261120900180",
+  "market": "KOSDAQ",
+  "company": "덕신이피씨",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-20T00:21:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261120800170",
+  "market": "KOSPI",
+  "company": "금호건설",
+  "report": "[기재정정]단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-20T00:09:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
+  "rcpNo": "20261120900120",
+  "market": "KOSDAQ",
+  "company": "로보티즈",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-19T23:55:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261119800335",
   "market": "KOSPI",
   "company": "넥센타이어",
