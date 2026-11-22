@@ -1,10 +1,8 @@
 {
- "lastRun": "2026-11-22T06:12:22.303Z",
- "errors": {
-  "dart": "fetch failed"
- },
+ "lastRun": "2026-11-22T19:22:34.635Z",
+ "errors": {},
  "dart": {
-  "at": "2026-11-21T18:58:53.410Z",
+  "at": "2026-11-22T19:22:34.635Z",
   "fetched": 0,
   "kept": 78,
   "source": "RSS"
