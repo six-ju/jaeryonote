@@ -1,5 +1,65 @@
 [
  {
+  "rcpNo": "20261123900170",
+  "market": "KOSDAQ",
+  "company": "아인스팩씨엔에스",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-23T02:14:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261123800180",
+  "market": "KOSPI",
+  "company": "한국항공우주",
+  "report": "[기재정정]단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-23T02:12:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
+  "rcpNo": "20261123900157",
+  "market": "KOSDAQ",
+  "company": "메디콕스",
+  "report": "횡령ㆍ배임사실확인",
+  "stockCode": null,
+  "at": "2026-11-23T01:41:00.000Z",
+  "category": "risk",
+  "label": "거래정지·관리",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261123900129",
+  "market": "KOSDAQ",
+  "company": "오브젠",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-23T01:12:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261123800132",
+  "market": "KOSPI",
+  "company": "대우건설",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-23T00:55:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261120800629",
   "market": "KOSPI",
   "company": "신성이엔지",
