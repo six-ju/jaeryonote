@@ -1,5 +1,29 @@
 [
  {
+  "rcpNo": "20261124901002",
+  "market": "KOSDAQ",
+  "company": "디에이치엑스컴퍼니",
+  "report": "주권매매거래정지기간변경 (상장적격성 실질심사 대상 결정)",
+  "stockCode": null,
+  "at": "2026-11-24T09:23:00.000Z",
+  "category": "risk",
+  "label": "거래정지·관리",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261124801000",
+  "market": "KOSPI",
+  "company": "하이브",
+  "report": "[기재정정]타법인주식및출자증권취득결정",
+  "stockCode": null,
+  "at": "2026-11-24T09:21:00.000Z",
+  "category": "mna",
+  "label": "인수·합병",
+  "tone": "info",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261124800955",
   "market": "KOSPI",
   "company": "삼호개발",
