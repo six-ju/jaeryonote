@@ -1,5 +1,29 @@
 [
  {
+  "rcpNo": "20261125000688",
+  "market": "KOSDAQ",
+  "company": "벡트로보틱스",
+  "report": "[기재정정]주요사항보고서(유상증자결정)",
+  "stockCode": null,
+  "at": "2026-11-25T07:56:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": true
+ },
+ {
+  "rcpNo": "20261125000672",
+  "market": "KOSDAQ",
+  "company": "대한광통신",
+  "report": "주요사항보고서(회사합병결정)",
+  "stockCode": null,
+  "at": "2026-11-25T07:53:00.000Z",
+  "category": "mna",
+  "label": "인수·합병",
+  "tone": "info",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261125600548",
   "market": "KONEX",
   "company": "탑선",
