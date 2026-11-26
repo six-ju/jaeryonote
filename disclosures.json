@@ -1,5 +1,17 @@
 [
  {
+  "rcpNo": "20261126000731",
+  "market": "KOSPI",
+  "company": "엘앤에프",
+  "report": "주요사항보고서(전환사채권발행결정)",
+  "stockCode": null,
+  "at": "2026-11-26T07:43:00.000Z",
+  "category": "bond",
+  "label": "전환사채 등",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
   "rcpNo": "20261126900613",
   "market": "KOSDAQ",
   "company": "인베니아",
