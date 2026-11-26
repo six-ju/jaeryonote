@@ -1,5 +1,77 @@
 [
  {
+  "rcpNo": "20261126900227",
+  "market": "KOSDAQ",
+  "company": "엑시콘",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-26T02:51:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261126000229",
+  "market": "KOSDAQ",
+  "company": "유디엠텍",
+  "report": "주요사항보고서(유상증자결정)",
+  "stockCode": null,
+  "at": "2026-11-26T02:50:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261126900218",
+  "market": "KOSDAQ",
+  "company": "핑거",
+  "report": "유상증자결정(종속회사의주요경영사항)",
+  "stockCode": null,
+  "at": "2026-11-26T02:32:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261126800200",
+  "market": "KOSPI",
+  "company": "HJ중공업",
+  "report": "단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-26T02:22:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261126900207",
+  "market": "KOSDAQ",
+  "company": "SDN",
+  "report": "주식소각결정",
+  "stockCode": null,
+  "at": "2026-11-26T02:18:00.000Z",
+  "category": "retire",
+  "label": "자사주 소각",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261126900194",
+  "market": "KOSDAQ",
+  "company": "유바이오로직스",
+  "report": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
+  "stockCode": null,
+  "at": "2026-11-26T02:13:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261125000688",
   "market": "KOSDAQ",
   "company": "벡트로보틱스",
