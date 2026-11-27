@@ -1,5 +1,77 @@
 [
  {
+  "rcpNo": "20261127900944",
+  "market": "KOSDAQ",
+  "company": "금양그린파워",
+  "report": "[기재정정]단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-27T07:51:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
+  "rcpNo": "20261127800956",
+  "market": "KOSPI",
+  "company": "KISCO홀딩스",
+  "report": "자기주식취득결정 (자회사의 주요경영사항)",
+  "stockCode": null,
+  "at": "2026-11-27T07:49:00.000Z",
+  "category": "buyback",
+  "label": "자사주 취득",
+  "tone": "good",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261127800950",
+  "market": "KOSPI",
+  "company": "한세엠케이",
+  "report": "최대주주등소유주식변동신고서",
+  "stockCode": null,
+  "at": "2026-11-27T07:48:00.000Z",
+  "category": "insider",
+  "label": "임원·주요주주 지분",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261127900874",
+  "market": "KOSDAQ",
+  "company": "DGI",
+  "report": "기타시장안내(관리종목지정우려종목) (주가 1,000원 미달)",
+  "stockCode": null,
+  "at": "2026-11-27T07:43:00.000Z",
+  "category": "risk",
+  "label": "거래정지·관리",
+  "tone": "warn",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261127900816",
+  "market": "KOSDAQ",
+  "company": "블루엠텍",
+  "report": "최대주주변경",
+  "stockCode": null,
+  "at": "2026-11-27T07:43:00.000Z",
+  "category": "control",
+  "label": "최대주주 변경",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261127001660",
+  "market": "KOSDAQ",
+  "company": "라메디텍",
+  "report": "[기재정정]주요사항보고서(유상증자결정)",
+  "stockCode": null,
+  "at": "2026-11-27T07:40:00.000Z",
+  "category": "rights",
+  "label": "유상증자",
+  "tone": "warn",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261127900824",
   "market": "KOSDAQ",
   "company": "와이씨",
