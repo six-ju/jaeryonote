@@ -1,5 +1,17 @@
 [
  {
+  "rcpNo": "20261127900346",
+  "market": "KOSDAQ",
+  "company": "중앙백신",
+  "report": "[기재정정]단일판매ㆍ공급계약체결",
+  "stockCode": null,
+  "at": "2026-11-27T03:16:00.000Z",
+  "category": "contract",
+  "label": "공급계약",
+  "tone": "good",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261126000731",
   "market": "KOSPI",
   "company": "엘앤에프",
