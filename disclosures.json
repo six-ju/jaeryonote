@@ -1,5 +1,29 @@
 [
  {
+  "rcpNo": "20261127900824",
+  "market": "KOSDAQ",
+  "company": "와이씨",
+  "report": "타법인주식및출자증권취득결정",
+  "stockCode": null,
+  "at": "2026-11-27T07:35:00.000Z",
+  "category": "mna",
+  "label": "인수·합병",
+  "tone": "info",
+  "corrected": false
+ },
+ {
+  "rcpNo": "20261127001745",
+  "market": "KOSDAQ",
+  "company": "비케이홀딩스",
+  "report": "[기재정정]주요사항보고서(전환사채권발행결정)",
+  "stockCode": null,
+  "at": "2026-11-27T07:35:00.000Z",
+  "category": "bond",
+  "label": "전환사채 등",
+  "tone": "warn",
+  "corrected": true
+ },
+ {
   "rcpNo": "20261127900346",
   "market": "KOSDAQ",
   "company": "중앙백신",
